@@ -1,0 +1,34 @@
+{
+  "name": "discord-update-bot",
+  "version": "1.0.0",
+  "description": "A discord bot to fetch software / docker container updates and report them to a channel on a discord server",
+  "main": "app.js",
+  "type": "module",
+  "engines": {
+    "node": "21.5.0"
+  },
+  "scripts": {
+    "start": "node ./src/app.js",
+    "register": "node ./src/commands.js",
+    "dev": "nodemon ./src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Peglow-C/discord-update-bot.git"
+  },
+  "author": "Peglow-C",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Peglow-C/discord-update-bot/issues"
+  },
+  "homepage": "https://github.com/Peglow-C/discord-update-bot#readme",
+  "dependencies": {
+    "discord-interactions": "^3.4.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
